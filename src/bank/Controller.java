@@ -36,7 +36,7 @@ public class Controller {
         String action = scanner.nextLine();
         LocalDate date = LocalDate.now();
         transfer(money);
-        if (money >=50000 || balanceNumber == 0){
+        if (money >=50000 ){
             list.add(new TransactionHistory(IdGenerate.getNewId(),date,action,number,money ));
         }
 
